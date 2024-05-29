@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-5">
+
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="../asset/pages/viewPatient.html" class="nav-link">View Patient</a></li>
+                <li class="nav-item"><a href="../asset/pages/deletepatient.html" class="nav-link">Delete Patient</a></li>
+                <li class="nav-item"><a href="../asset/pages/updatePatient.html" class="nav-link">Update Patient</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-info">Login</button>
+                <button type="button" class="btn btn-outline-danger">Sign-up</button>
+            </div>
+        </header>
+
+
+
+
+        <h1 class="mb-4">Welcome to Our Hospital</h1>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Patient Information</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="patientName">Patient Name</label>
+                                <input type="text" class="form-control" id="patientName"
+                                    placeholder="Enter patient name">
+                            </div>
+                            <div class="form-group">
+                                <label for="patientAge">Patient Age</label>
+                                <input type="number" class="form-control" id="patientAge"
+                                    placeholder="Enter patient age">
+                            </div>
+                            <div class="form-group">
+                                <label for="patientSymptoms">Patient Symptoms</label>
+                                <textarea class="form-control" id="patientSymptoms" rows="3"
+                                    placeholder="Enter patient symptoms"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="patientAddress">Patient Address</label>
+                                <input type="text" class="form-control" id="patientAddress"
+                                    placeholder="Enter patient address">
+                            </div>
+                            <div class="form-group">
+                                <label for="doctor">Doctor</label>
+                                <select class="form-control" id="doctor">
+                                    <option value="">Select a doctor</option>
+                                    <option value="Dr. Smith">Dr. Smith</option>
+                                    <option value="Dr. Johnson">Dr. Chaminda</option>
+                                    <option value="Dr. Williams">Dr. Williams</option>
+                                </select>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Appointment Scheduling</h5>
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="appointmentDate">Appointment Date</label>
+                                            <input type="date" class="form-control" id="appointmentDate">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="appointmentTime">Appointment Time</label>
+                                            <input type="time" class="form-control" id="appointmentTime">
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="mt-3 ">
+                                <button type="button" class="btn btn-outline-primary"  id="btn-submit">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div data-aos="fade-down">
+                    <img width="80%" src="../asset/img/hospital.jpg" />
+                </div>
+                <div data-aos="fade-left">
+                    <img width="80%" src="../asset/img/doctor.avif" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <p data-aos="fade-zoom-in" >
+            A hospital is a healthcare institution providing patient treatment with specialized health science and
+            auxiliary healthcare staff and medical equipment.[1] The best-known type of hospital is the general
+            hospital, which typically has an emergency department to treat urgent health problems ranging from fire and
+            accident victims to a sudden illness. A district hospital typically is the major health care facility in its
+            region, with many beds for intensive care and additional beds for patients who need long-term care.
+        </p>
+        <p data-aos="fade-zoom-in">
+
+            Specialized hospitals include trauma centers, rehabilitation hospitals, children's hospitals, geriatric
+            hospitals, and hospitals for specific medical needs, such as psychiatric hospitals for psychiatric treatment
+            and other disease-specific categories. Specialized hospitals can help reduce health care costs compared to
+            general hospitals.[2] Hospitals are classified as general, specialty, or government depending on the sources
+            of income received.
+        </p>
+        <p data-aos="fade-zoom-in">
+
+            A teaching hospital combines assistance to people with teaching to health science students and auxiliary
+            healthcare students. A health science facility smaller than a hospital is generally called a clinic.
+            Hospitals have a range of departments (e.g. surgery and urgent care) and specialist units such as
+            cardiology. Some hospitals have outpatient departments and some have chronic treatment units. Common support
+            units include a pharmacy, pathology, and radiology.
+        </p>
+        <p data-aos="fade-zoom-in">
+
+            Hospitals are typically funded by public funding, health organizations (for-profit or nonprofit), health
+            insurance companies, or charities, including direct charitable donations. Historically, hospitals were often
+            founded and funded by religious orders, or by charitable individuals and leaders.[3]
+        </p>
+        <p data-aos="fade-zoom-in">
+
+            Hospitals are currently staffed by professional physicians, surgeons, nurses, and allied health
+            practitioners. In the past, however, this work was usually performed by the members of founding religious
+            orders or by volunteers. However, there are various Catholic religious orders, such as the Alexians and the
+            Bon Secours Sisters that still focus on hospital ministry in the late 1990s, as well as several other
+            Christian denominations, including the Methodists and Lutherans, which run hospitals.[4] In accordance with
+            the original meaning of the word, hospitals were original "places of hospitality", and this meaning is still
+            preserved in the names of some institutions such as the Royal Hospital Chelsea, established in 1681 as a
+            retirement and nursing home for veteran soldiers.
+        </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../asset/js/app.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000
+        });
+    </script>
+</body>
+
+</html>

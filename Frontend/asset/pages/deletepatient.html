@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Patient</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #DC3545;
+            color: white;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="../pages/viewPatient.html" class="nav-link">View Patient</a></li>
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Delete Patient</a></li>
+            <li class="nav-item"><a href="../pages/updatePatient.html" class="nav-link">Update Patient</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+        <div class="d-flex">
+            <button type="button" class="btn btn-outline-info mr-2">Login</button>
+            <button type="button" class="btn btn-outline-danger">Sign-up</button>
+        </div>
+    </header>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card-header">
+                        <h1 class="mb-0">Delete Patient</h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="patientId">Patient ID</label>
+                            <input type="text" class="form-control" id="patientId" placeholder="Enter patient ID">
+                        </div>
+                        <button type="button" class="btn btn-danger btn-block deleteButton">
+                            <i class="fas fa-trash-alt mr-2"></i>
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../js/delete.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    username: root
+    password: gihan123
+    url: jdbc:mysql://localhost:3306/patient_crm
+  jpa:
+    hibernate:
+      ddl-auto: update
